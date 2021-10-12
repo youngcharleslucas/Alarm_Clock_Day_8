@@ -7,14 +7,13 @@ class AlarmClock:
 
     def clock (self):
         import datetime
-        time = datetime.datetime()
+        time = datetime.datetime.now()
         current_time = time.strftime("%X")
         return current_time
 
         
 
-    def set_alarm (self):
-
+    # def set_alarm (self):
 
 
 

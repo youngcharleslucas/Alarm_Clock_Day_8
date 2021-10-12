@@ -87,3 +87,8 @@ C. Execution function ()
 
 '''
 
+from alarm_clock import AlarmClock
+
+clock_time = AlarmClock()
+print (clock_time.clock())
+
