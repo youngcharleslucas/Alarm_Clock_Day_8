@@ -24,6 +24,7 @@ class AlarmClock:
             if hour_alarm <= 24 and hour_alarm >= 00 and min_alarm <= 60:
                 self.set_alarm.append(hour_alarm)
                 self.set_alarm.append(min_alarm)
+                print(f'You\'ve set an alarm for {self.set_alarm[0]}:{self.set_alarm[1]}')
                 proper_time = False
             else: 
                 print("Please enter a correct time")
@@ -31,7 +32,7 @@ class AlarmClock:
 
     def activate_alarm (self, alarm_time):
         import time
-        now = datetime.now()
+        now = datetime.now().strftime("%X")
         print_alarm = (f"ALARM!!! The time is {now}")
         run_alarm = True
         while run_alarm == True:
@@ -39,13 +40,8 @@ class AlarmClock:
                 print(print_alarm)
                 run_alarm = False
             else:
-                print(datetime.now().strftime("%M"))
-                print(alarm_time[1])
-                exit = input("{now} Enter any key to exit alarm")
-                if exit != "":
-                    time.sleep(5)
-                else:
-                    break
+                time.sleep(5)
+                
 
 
 '''

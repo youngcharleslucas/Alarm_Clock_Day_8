@@ -90,7 +90,7 @@ C. Execution function ()
 from alarm_clock import AlarmClock
 
 clock_time = AlarmClock()
-print (clock_time.clock())
+print (f'The current time is {clock_time.clock()}')
 
 alarm_set = AlarmClock()
 set = alarm_set.setting_alarm()
@@ -98,5 +98,6 @@ set = alarm_set.setting_alarm()
 print_alarm = AlarmClock()
 print_alarm.activate_alarm(set)
 
-
+# I just gave up on this problem. I was stuck in a while loop with no way for the user to input 
+# information to get out of it-----------------------------------------------------------------
 
